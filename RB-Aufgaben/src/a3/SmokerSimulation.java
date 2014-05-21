@@ -8,7 +8,12 @@ import java.util.Random;
 public class SmokerSimulation {
 	public static long smokeTime = 100;
 	public static long gameTime = 1000;
+	
 	public static void main(String[] args){
+		simulate();
+	}
+	
+	public static void simulate(){
 		System.err.println("Initializing Objects!");
 		Agent agent = new Agent();
 		Smoker s1 = new Smoker(agent,1);
